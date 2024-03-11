@@ -22,8 +22,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"knex": "^3.1.0",
-		"pg": "^8.11.3",
-		"pg-cloudflare": "^1.1.1"
+		"postgres": "^3.4.3"
 	}
 }
