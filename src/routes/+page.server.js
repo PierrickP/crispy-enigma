@@ -9,6 +9,7 @@ const db = knex({
 /** @type {import('./$types').PageServerLoad} */
 export async function load() {
   return {
-    data: db("rnc_database"),
+    now: new Date(),
+    data: db("rnc_database").select(db.raw("NOW(), count(*)")).first(),
   };
 }
